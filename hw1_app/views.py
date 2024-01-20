@@ -47,3 +47,5 @@ def index(request):
 def about(request):
     logger.info('About page loaded successfully')
     return HttpResponse(html2)
+
+
