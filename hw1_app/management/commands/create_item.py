@@ -10,8 +10,8 @@ class Command(BaseCommand):
         parser.add_argument('quantity')
 
     def handle(self, *args, **kwargs):
-        title = kwargs.pop('title')
-        description = kwargs.pop('description')
+        title = kwargs.get('title')
+        description = kwargs.get('description')
         price = kwargs('price')
         quantity = kwargs('quantity')
         item = Items(
